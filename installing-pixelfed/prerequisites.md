@@ -13,6 +13,7 @@ Before you install Pixelfed, you will need to setup a webserver with the require
 - [OptiPNG](http://optipng.sourceforge.net/), for lossless PNG
 - [PNGQuant](https://pngquant.org/), for lossy PNG
 
+Or you can use deploy using docker and docker-compose.
 
 ## HTTP Web server
 The following web servers are officially supported:
@@ -85,3 +86,6 @@ Finally, make sure to set the desired upload limits for your PHP processes. You 
 - `upload_max_filesize` (default 2M, set this <= `post_max_size`)
 - `max_file_uploads` (default 20, but make sure it is >= your desired attachment limit)
 - `max_execution_time` (default 30, consider raising this to 600 or more so that longer tasks aren't interrupted)
+
+# Install using docker-compose
+ - Install docker-compose & docker in your system.
